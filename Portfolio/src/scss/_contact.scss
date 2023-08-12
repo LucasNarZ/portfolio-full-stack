@@ -1,0 +1,20 @@
+.contact{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 40px;
+    align-items: center;
+    button{
+        background-color: $light-blue;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        width: 200px;
+        height: 40px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+    }
+}

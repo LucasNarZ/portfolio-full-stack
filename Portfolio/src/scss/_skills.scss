@@ -1,0 +1,50 @@
+#Skills{
+    min-height: $sections-height;
+    background-color: $skills-color;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    align-items: center;
+
+    img{
+        height: 60px;
+        margin-top: 10px;
+    }
+    .boxes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 30px;
+        column-gap: 30px;
+        margin-top: 90px;
+        .box{
+            width: 260px;
+            height: 170px;
+            background-color: $boxes-color;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            font-size: 12px;
+            transition: transform 0.5s;
+            p{
+                padding: 0 20px;
+            }
+            
+        }
+        .box:hover{
+            transform: scale(1.2);
+        }
+        .ui-ux .box-title{
+            font-size: 30px;
+            margin-top: 15px;
+        }
+
+       @media (max-width:850px){
+            grid-template-columns: 1fr 1fr;
+       }
+       @media (max-width:563px){
+        grid-template-columns: 1fr;
+   }
+    }
+}
