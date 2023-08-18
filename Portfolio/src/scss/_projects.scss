@@ -8,12 +8,16 @@
     .project{
         display: flex;
         column-gap: 50px;
-        margin-top: 50px;
+        margin-top: 200px;
+        align-items: center;
         height: 180px;
         .title-image{
             display: flex;
             flex-direction: column;
-            width: 300px;
+            img{
+                width: 600px;
+                height: auto;
+            }
             .project-title{
                 font-size: 25px;
             }
