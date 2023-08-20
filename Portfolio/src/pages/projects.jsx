@@ -28,7 +28,7 @@ export function Projects(){
     return(
         <section id="Projects">
             <p className='title'>Projects</p>
-            <p className='text'>here tou can see my skills in practice</p>
+            <p className='text'>here you can see my skills in practice</p>
             {projects.map((project) => {
                 return(
                     <div className="project">
