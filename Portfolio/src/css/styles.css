@@ -146,7 +146,7 @@
 
 #Skills {
   min-height: calc(100vh - 79px);
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
@@ -203,6 +203,7 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
+  margin-bottom: 100px;
 }
 #Projects .project {
   display: flex;
@@ -250,6 +251,77 @@
   cursor: pointer;
   margin-top: 40px;
   padding-bottom: 40px;
+}
+
+.contact {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+}
+.contact h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 200px;
+  margin-top: 200px;
+}
+.contact img {
+  width: 36px;
+}
+.contact .option {
+  display: flex;
+  column-gap: 15px;
+  border-radius: 10px;
+  width: 500px;
+  border: 1px rgb(221, 221, 221) solid;
+  padding: 10px;
+  align-items: center;
+  background-color: rgb(248, 248, 248);
+  margin-top: 20px;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+.contact .option p {
+  text-align: center;
+}
+.contact .option:hover {
+  background-color: white;
+}
+.contact a {
+  text-decoration: none;
+  color: black;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  padding: 20px 0;
+  background-color: rgb(91, 91, 255);
+  color: white;
+}
+#footer img {
+  width: 90px;
+}
+#footer a {
+  text-decoration: none;
+  color: white;
+}
+#footer p {
+  text-align: center;
+}
+#footer .name-and-prof {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer .name-and-prof .name {
+  font-size: 30px;
+}
+#footer .name-and-prof .prof {
+  font-size: 14px;
 }
 
 * {
