@@ -253,23 +253,23 @@
   padding-bottom: 40px;
 }
 
-.contact {
+#contact {
   display: flex;
   height: 100vh;
   width: 100vw;
   flex-direction: column;
   align-items: center;
 }
-.contact h1 {
+#contact h1 {
   text-align: center;
   font-size: 30px;
   margin-bottom: 200px;
   margin-top: 200px;
 }
-.contact img {
+#contact img {
   width: 36px;
 }
-.contact .option {
+#contact .option {
   display: flex;
   column-gap: 15px;
   border-radius: 10px;
@@ -282,13 +282,13 @@
   transition: background-color 0.5s;
   cursor: pointer;
 }
-.contact .option p {
+#contact .option p {
   text-align: center;
 }
-.contact .option:hover {
+#contact .option:hover {
   background-color: white;
 }
-.contact a {
+#contact a {
   text-decoration: none;
   color: black;
 }
