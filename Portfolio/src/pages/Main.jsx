@@ -5,8 +5,7 @@ import { Home } from './Home';
 import { Skills } from './skills';
 import { Projects } from './projects';
 import { Footer } from '../componentes/footer';
-
-
+import { Contact } from './contact';
 
 export function Main(){
     return(
@@ -15,6 +14,7 @@ export function Main(){
             <Home />
             <Skills />
             <Projects />
+            <Contact />
             <Footer />
         </React.Fragment>
     )
