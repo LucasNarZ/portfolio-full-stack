@@ -33,10 +33,10 @@ export function Projects(){
                 return(
                     <div className="project">
                         <div className="title-image">
-                            <p className="project-title">{project.title}</p>
                             <a href={project.projectLink} target="_blank"><img src={project.imageLink} className="project-image" alt="" /></a>
                         </div>
                         <div className="project-info">
+                            <p className="project-title">{project.title}</p>
                             <p className="project-description">{project.description}</p>
                             <p className="skills-used">{project.skills}</p>
                             <a href={project.link} target='_blanked'><img src={GithubIcon} className="github" alt="github" /></a>
