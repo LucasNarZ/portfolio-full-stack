@@ -7,7 +7,8 @@
     padding-top: 79px;
 
     .info{
-        width: 450px;
+        width: 90vw;
+        max-width: 450px;
         transform: translateX(50px);
         :nth-child(1){
             font-size: 85px;
@@ -50,7 +51,6 @@
         flex-direction: column;
         align-items: start;
         .info{
-            max-width: 80vw;
             .contact-me-btn{
                 margin-top: 10px;
             }
@@ -73,17 +73,31 @@
         .icons{
             p{
                 font-size: 37px;
-                color: white;
-                opacity: .4;
+                opacity: .7 ;
             }
         }
         img{
             width: 90px;
             opacity: 0.7;
+            transition: all .5s;
+            &:hover{
+                opacity: 1;
+                transform: scale(1.2);
+            }
         }
 
         @media(max-width: 860px){
             display: none;
         }
+    }
+    @media(max-width: 860px){
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(max-width: 715px){
+    #home{
+        align-items: center;
+        justify-content: center;
     }
 }

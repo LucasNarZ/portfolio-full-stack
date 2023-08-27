@@ -22,15 +22,14 @@
     .Menu{
         display: flex;
         column-gap: 40px;
-        width: 300px;
         list-style-type: none;
         font-size: 19.5px;
-        margin-right: 10vw;
         a{
             text-decoration: none;
             color: black;
         }
         li{
+            cursor: pointer;
             position: relative;
             &::after {
                 content: "";
@@ -43,18 +42,66 @@
                 background-color: #000;
                 transition: width 0.5s ease-out;
             }
+            &:last-of-type{
+                margin-right: 70px;
+            }
             &:hover::after {
                 width: 100%;
             }
         }
     }   
-    @media (max-width:555px){
-        .name-and-prof{
-            margin-left: 5px;
+    .burger-menu{
+        width: 30px;
+        display: none;
+    }
+
+  
+}
+@media (max-width:600px){
+    
+    
+    .header{
+        flex-direction: column;
+        .initial-menu{
+            width: 100%;
+            height: 90%;
+            justify-content: space-between;
+            position: relative;
+            .burger-menu{
+                display: inline;
+                position: absolute;
+                right: 30px;
+                top: 25%;
+                transition: all .5s;
+            }
+            .rotate{
+                transform: rotate(90deg);
+            }
+            .name-and-prof{
+                margin-left: 15px;
+            }
+            
         }
         .Menu{
+            display: none;
             column-gap: 20px;
             justify-content: center;
+    
         }
-   }
+        nav, .show{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            li{
+                margin: 0 !important
+            }
+        }
+        
+    }
+    .open{
+        height: 120px;
+    }
+    
+    
 }
