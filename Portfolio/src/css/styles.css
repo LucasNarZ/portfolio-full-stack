@@ -105,21 +105,21 @@
   padding-top: 79px;
 }
 #Home .info {
-  width: 90vw;
+  width: 70vw;
   max-width: 450px;
   transform: translateX(50px);
 }
 #Home .info :nth-child(1) {
-  font-size: 85px;
+  font-size: 5rem;
   color: rgb(41, 41, 41);
   transform: translateY(10px);
 }
 #Home .info :nth-child(2) {
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #ff1818;
 }
 #Home .info :nth-child(3) {
-  font-size: 17px;
+  font-size: 1rem;
   margin-top: 30px;
 }
 #Home .info .contact-me-btn {
@@ -137,11 +137,6 @@
 }
 #Home .info .contact-me-btn:hover {
   background-color: #47bcff;
-}
-@media (max-width: 960px) {
-  #Home {
-    justify-content: space-between;
-  }
 }
 @media (max-width: 860px) {
   #Home {
@@ -183,17 +178,23 @@
     display: none;
   }
 }
-@media (max-width: 860px) {
+
+@media (max-width: 500px) {
   #Home {
-    align-items: center;
+    align-items: start;
     justify-content: center;
   }
-}
-
-@media (max-width: 715px) {
-  #home {
-    align-items: center;
-    justify-content: center;
+  #Home .info :nth-child(1) {
+    font-size: 3rem;
+  }
+  #Home .info :nth-child(2) {
+    font-size: 2rem;
+  }
+  #Home .info :nth-child(3) {
+    font-size: 1rem;
+  }
+  #Home .info .contact-me-btn {
+    font-size: 15px;
   }
 }
 #Skills {
@@ -258,12 +259,14 @@
   padding-bottom: 20px;
   margin-bottom: 100px;
 }
+#Projects .text {
+  text-align: center;
+}
 #Projects .project {
   display: flex;
   column-gap: 50px;
-  margin-top: 200px;
+  margin-top: 100px;
   align-items: center;
-  height: 180px;
 }
 #Projects .project .title-image {
   display: flex;
@@ -271,7 +274,7 @@
 }
 #Projects .project .title-image img {
   max-width: 600px;
-  width: 95vw;
+  width: 90vw;
   height: auto;
   transition: transform 0.5s;
 }
@@ -299,6 +302,9 @@
   #Projects .project {
     flex-direction: column;
   }
+  #Projects .project .title-image img:hover {
+    transform: scale(1);
+  }
 }
 #Projects .see-more {
   cursor: pointer;
@@ -313,6 +319,7 @@
 #Contact {
   display: flex;
   height: 100vh;
+  min-height: 800px;
   width: 100vw;
   flex-direction: column;
   align-items: center;

@@ -7,20 +7,20 @@
     padding-top: 79px;
 
     .info{
-        width: 90vw;
+        width: 70vw;
         max-width: 450px;
         transform: translateX(50px);
         :nth-child(1){
-            font-size: 85px;
+            font-size: 5rem;
             color: rgb(41, 41, 41);
             transform: translateY(10px);
         }
         :nth-child(2){
-            font-size: 40px;
+            font-size: 2.5rem;
             color: $red;
         }
         :nth-child(3){
-            font-size: 17px;
+            font-size: 1rem;
             margin-top: 30px;
         }
         .contact-me-btn{
@@ -42,11 +42,6 @@
         
     }
 
-
-    @media(max-width: 960px){
-        justify-content: space-between;
-
-    }
     @media(max-width: 860px){
         flex-direction: column;
         align-items: start;
@@ -90,14 +85,28 @@
             display: none;
         }
     }
-    @media(max-width: 860px){
-        align-items: center;
-        justify-content: center;
-    }
 }
-@media(max-width: 715px){
-    #home{
-        align-items: center;
+@media(max-width: 500px){
+    #Home{
+        align-items: start;
         justify-content: center;
-    }
+        .info{
+            :nth-child(1){
+                font-size: 3rem;
+
+            }
+            :nth-child(2){
+                font-size: 2rem;
+
+            }
+            :nth-child(3){
+                font-size: 1rem;
+
+            }
+            .contact-me-btn{
+                font-size: 15px;
+            }
+        }
+        }
+
 }
